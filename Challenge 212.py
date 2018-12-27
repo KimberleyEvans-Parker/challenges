@@ -8,6 +8,9 @@ def main():
         else:
             s2 += char + "o" + char.lower()
     print(s2)
+    s3 = "".join(char if char in vowels else char +
+                 "o" + char.lower() for char in s)
+    print(s3)
 
 
 main()
